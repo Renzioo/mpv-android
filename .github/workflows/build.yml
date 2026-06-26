@@ -15,7 +15,7 @@ jobs:
           distribution: temurin
 
       - name: Fix script permissions
-        run: chmod +x buildscripts/include/ci.sh buildscripts/buildall.sh buildscripts/scripts/*.sh buildscripts/include/*.sh
+        run: chmod +x buildscripts/include/ci.sh buildscripts/buildall.sh buildscripts/scripts/*.sh buildscripts/include/*.sh gradlew
 
       - name: Export env vars
         run: buildscripts/include/ci.sh export >>$GITHUB_ENV
